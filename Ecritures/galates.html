@@ -278,7 +278,7 @@ S : signes (càd ponctuations càd soit celle de R.P soit la mienne)
 <!-- Paul soumet aux Galates une solution concrète à leur situation : éjecte le faux évangile, et débarasse-toi de qui est asservi à un faux évangile et te poursuit ! -->
 <!-- Paul ne laisse pas les Galates sans solution concrète à leur problème. Éjecte le faux évangile, et débarasse-toi de qui est asservi à un faux évangile et te poursuit ! -->
 <br>
-<section style="margin:0px;line-height: 150%;">
+<section style="margin:0px;line-height: 150%;" id="ga4-21-31">
 <p style="margin:0px;" class="ma-ponct-para">
 &emsp; <span class="verses">21</span> Dites-moi<span class="RP-ponctuation ma-ponctuation">,</span> ceux sous une loi voulants être<span class="RP-ponctuation ma-ponctuation">,</span> la <span class="ma-ponctuation">L</span><span class="RP-ponctuation">l</span>oi n'écoutez-vous pas <span class="RP-ponctuation ma-ponctuation">?</span><span class="ma-ponctuation"><br></span>
 <span class="verses">22</span> <span class="RP-ponctuation">C</span><span class="ma-ponctuation">c</span>ar il a été graphé<span class="RP-ponctuation">,</span> en ce que Abraam eut deux fils <span class="RP-ponctuation ma-ponctuation">:</span> un du sortant de la jeune servante<span class="RP-ponctuation">,</span> et un du sortant de la libre<span class="RP-ponctuation">.</span><span class="ma-ponctuation">,</span>
@@ -343,9 +343,12 @@ ou:
 </body>
 <script>
 	displayRPponctuation = false;
+	var sectionGa4_21_31 = document.getElementById("ga4-21-31").cloneNode(true);
+	var first = true;
 	displayRPponctuations(displayRPponctuation)
 	function displayRPponctuations(bool) {
 		if (bool) {
+			sectionGa4_21_31 = document.getElementById("ga4-21-31").cloneNode(true);
 			ee = document.getElementsByClassName("ma-ponctuation");
 			[...ee].forEach(element => {
 				element.style.display = "none";
@@ -360,14 +363,18 @@ ou:
 			});
 		}
 		else {
-			ee = document.getElementsByClassName("RP-ponctuation");
-			[...ee].forEach(element => {
-				element.style.display = "none";
-			});
-			ee = document.getElementsByClassName("ma-ponctuation");
-			[...ee].forEach(element => {
-				element.style.display = "initial";
-			});
+			document.getElementById("ga4-21-31").replaceWith(sectionGa4_21_31);
+			if (first) {
+				ee = document.getElementsByClassName("RP-ponctuation");
+				[...ee].forEach(element => {
+					element.style.display = "none";
+				});
+				ee = document.getElementsByClassName("ma-ponctuation");
+				[...ee].forEach(element => {
+					element.style.display = "initial";
+				});
+				first = false;
+			}
 		}
 	}
 	document.addEventListener("keyup", function(event) {

@@ -430,6 +430,7 @@ ou:
 
 	<h3 id="chapitre_6">Chapitre 6</h3>
 
+	<section id="ga_6">
 	<p>
 	<span class="verses">01</span> Frères, si le cas échéant aussi qu'ait été pris à l'avance un être humain dans une quelconque chute à côté, vous les souffliques ajustez complètement ce tel dans un souffle de douceur, visant toi-même ne pas aussi toi que tu aies été mis en tentation.
 	<span class="verses">02</span> Des uns les autres les poids mettez en charge<span class="RP-ponctuation ma-ponctuation">,</span> et qu'ainsi vous veniez d'élever à plénitude la loi de l'oint.
@@ -445,8 +446,8 @@ ou:
 	<span class="verses">10</span> Par conséquent donc comme un moment [convenable] nous avons, que nous nous mettions au travail le bon vers tous, surtout cependant vers les membres de maisonnée de la croyance.
 	<p>
 	<span class="verses">11</span> Voyez à combien grandes lettres je vous graphai à la mienne main.
-	<span class="verses">12</span> Autant lesquels veulent faire bien de face dans une chair, ceux-ci vous contraignent d'être circoncis, seulement afin qu'ils ne soient pas - à la croix du oint - poursuivis.
-	<span class="verses">13</span> Car pas même ceux-ci ayants étés circoncis eux-mêmes gardiennent une loi<span class="RP-ponctuation ma-ponctuation">,</span> mais ils vous veulent être circoncis, afin que dans la-vôtre chair ils s'aient vanté.
+	<span class="verses">12</span> Autant lesquels veulent faire bien de face dans une chair, ceux-ci vous contraignent d'être circoncis<span class="RP-ponctuation">,</span> <span class="ma-ponctuation">(</span>seulement afin qu'ils ne soient pas - à la croix du oint - poursuivis<span class="RP-ponctuation">.</span><span class="ma-ponctuation">,</span>
+	<span class="verses">13</span> <span class="RP-ponctuation">C</span><span class="ma-ponctuation">c</span>ar pas même ceux-ci ayants étés circoncis eux-mêmes gardiennent une loi<span class="RP-ponctuation">,</span><span class="ma-ponctuation">)</span> mais ils vous veulent être circoncis, afin que dans la-vôtre chair ils s'aient vanté.
 	<span class="verses">14</span> [Quant à] moi cependant puisse-t-il ne pas se devenir de se vanter sinon en la croix de notre maître oint Iésous· à-travers de laquelle à moi un monde a été crucifié<span class="RP-ponctuation ma-ponctuation">,</span> et moi au monde.
 	<span class="verses">15</span> Car en oint Iésous ni circoncision a quelconque tenacité<span class="RP-ponctuation ma-ponctuation">,</span> ni prépuce<span class="RP-ponctuation ma-ponctuation">,</span> mais nouvelle création.
 	<span class="verses">16</span> Et autant lesquels à cette règle-ci avanceront en ligne, paix sur eux<span class="RP-ponctuation ma-ponctuation">,</span> et miséricorde<span class="RP-ponctuation ma-ponctuation">,</span> et sur l'Israël du dieu.
@@ -456,19 +457,22 @@ ou:
 	</p>
 	<p>
 	<span class="verses">18</span> La grâce de notre oint maître Iésous avec votre souffle, frères<span class="RP-ponctuation ma-ponctuation">.</span> Amen.
-</p>
+	</p>
+</section>
 	</section>
 </body>
 <script>
 	displayRPponctuation = false;
 	var sectionGa4_21_31 = document.getElementById("ga4-21-31").cloneNode(true);
 	var sectionGa5 = document.getElementById("ga_5").cloneNode(true);
+	var sectionGa6 = document.getElementById("ga_6").cloneNode(true);
 	var first = true;
 	displayRPponctuations(displayRPponctuation)
 	function displayRPponctuations(bool) {
 		if (bool) {
 			sectionGa4_21_31 = document.getElementById("ga4-21-31").cloneNode(true);
 			sectionGa5 = document.getElementById("ga_5").cloneNode(true);
+			sectionGa6 = document.getElementById("ga_6").cloneNode(true);
 			ee = document.getElementsByClassName("ma-ponctuation");
 			[...ee].forEach(element => {
 				element.style.display = "none";
@@ -485,6 +489,7 @@ ou:
 		else {
 			document.getElementById("ga4-21-31").replaceWith(sectionGa4_21_31);
 			document.getElementById("ga_5").replaceWith(sectionGa5);
+			document.getElementById("ga_6").replaceWith(sectionGa6);
 			if (first) {
 				ee = document.getElementsByClassName("RP-ponctuation");
 				[...ee].forEach(element => {

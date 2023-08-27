@@ -1,0 +1,1 @@
+/home/gustav/Bureau/vue/GITHUB/nouveautestament.github.io-mainr/nouveautestament.github.io-main/database/la-loi-galates/target/debug/la-loi-galates: /home/gustav/Bureau/vue/GITHUB/nouveautestament.github.io-mainr/nouveautestament.github.io-main/database/la-loi-galates/src/main.rs

@@ -1,0 +1,126 @@
+<DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Groupe Liberté</title>
+</head>
+
+<style>
+html {
+	background-color: rgb(0, 166, 118);
+}
+body {
+	width: 80%;
+	margin: auto;
+	background-color: rgb(247, 249, 249);
+}
+
+header {
+	text-align: center;
+	padding-top: 1px;
+	margin-top: 1.5px;
+}
+
+nav {
+	font-size: 1.05em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+body section {
+	width: 97%;
+	margin: auto;
+	background-color: white; 
+}
+
+
+.title {
+	display: block;
+	font-style:italic;
+	margin-top: 10px;
+}
+
+div {
+	display: float;
+	float: left;
+	margin-right: 10px;
+	margin-left: 4px;
+	background-color: rgb(247, 249, 249);
+	text-align: center;
+}
+
+h2, h3 {
+	text-align: center;
+	background-color : white;
+}
+
+h2 {
+
+
+	padding-left: 40px;
+}
+
+</style>
+
+<body>
+	<header><h1>Groupe Liberté</h1></header>
+
+	<nav>
+		<a href="index.html">Accueil</a> | 
+		<a href="sermons.html">Liste des sermons</a> | 
+		<a href="#">Commandements du Seigneur</a> | 
+		<a href="#">Membres</a> | 
+		<a href="Ecritures/index.html">Ecritures</a> |
+		<a href="#">Projet <em>Départ</em></a> | 
+		<a href="mailto:gustav7777777@icloud.com">Contact</a>
+	</nav>
+	<h2><span>"être sous une loi"</span> - commentaire/explication.</h2>
+
+	<section>
+
+    <p>
+        <strong>Remarque 1 :</strong><br>
+            Littéralement, l'expression [être] "sous la Loi" (ou [être] "sous la loi") n'existe pas dans le N.T.<br>
+            Mais l'expression que l'on trouve est "ὑπὸ νόμον", qui peut être traduit par "sous loi" ou "sous une loi".<br>
+            Certains voyant ὑπὸ pourraient penser au sens de "par" au lieu de celui de "sous", sauf que ce sens de "par" n'existe pas lorsque le mot suivant est à l'accusatif, et c'est à ce cas, où le mot suivant est à l'accusatif, que nous nous intéressons.
+        <br><br>
+        <strong>Les occurences de "ὑπὸ νόμον" dans le N.T :</strong>
+        <ul>
+            <li>Rm 6:14-15</li><br>
+            <li>1 Cor 9:20</li><br>
+            <li>Ga 3:23 : refaire le commentaire (car fait sur une mauvaise traduction "sous l'effet de" plutot que "sous").</li>
+            <li>Ga 4:4</li>
+            <li>Ga 4:5</li>
+            <li>Ga 4:21</li>
+            <li>Ga 5:18</li>
+        </ul>
+        <strong>Remarque 2 :</strong><br>
+        La KJV sous-entend que le grec sous-jacent en Rm 3:19 a "ὑπὸ νόμον" alors qu'il n'en est rien.
+        <br><br>
+        <strong>Remarque 3 :</strong><br>
+        L'expression se trouve donc au total dans 8 versets (pour 9 occurences au total dans le N.T).
+
+    </p>
+
+	</section>
+</body>
+
+<script>
+
+	displayVerse = false;
+	displayVerses(displayVerse)
+	function displayVerses(bool) {
+		ee = document.getElementsByClassName("verse");
+		[...ee].forEach(element => {
+			element.style.display = bool?"initial":"none";
+		});
+	}
+	document.addEventListener("keyup", function(event) {
+		if (event.key == "v") {
+			displayVerse = !displayVerse;
+			displayVerses(displayVerse);
+		}
+	});
+</script>
+
+</html>
